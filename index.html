@@ -30,16 +30,30 @@
 </head>
 <body>
      <main>
+        <form>
          <div class="options">
                 <input class="search_input" placeholder="Search">
                 <button class ="search_btn">Search</button>
          </div>
+         <div class="points">
+                <input class="point1" type="radio" name="point" value="underconstruction" id="underconstruction" />
+                <label for="underconstruction">Under-Construction</label>
+                <input class ="point2" type="radio" name="point" value="blocked" id="blocked" />
+                <label for="blocked">Blocked</label>
+            
+         </div>
+         <div class="submitvalues">
+                <input 
+         </div>
+        </form>
+
          <div id="map"></div>
          </main>
      </main>
      <footer>
          <p class="copyright">© 2023 SMT —@smt</p>
      </footer>
+  <script src="checkbox.js"></script>
   <script src="maps.js"></script>
   <script src="https://www.bing.com/api/maps/mapcontrol?callback=getMap" async></script>
 </body>
