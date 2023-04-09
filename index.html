@@ -30,9 +30,9 @@
 </head>
 <body>
      <main>
-        <form>
+        <form action="" id="index_form">
          <div class="options">
-                <input class="search_input" placeholder="Search">
+                <input class="search_input" placeholder="Search" id="place">
                 <button class ="search_btn">Search</button>
          </div>
          <div class="points">
@@ -43,7 +43,7 @@
             
          </div>
          <div class="submitvalues">
-                <input 
+                <button type="submit">Submit</button>
          </div>
         </form>
 
@@ -53,7 +53,9 @@
      <footer>
          <p class="copyright">© 2023 SMT —@smt</p>
      </footer>
-  <script src="checkbox.js"></script>
+  <script src="sendform.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
   <script src="maps.js"></script>
   <script src="https://www.bing.com/api/maps/mapcontrol?callback=getMap" async></script>
 </body>
